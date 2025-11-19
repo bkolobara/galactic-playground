@@ -1,1 +1,5 @@
 .vscode
+# Rust build targets
+target/
+# Used for external git dependencies
+external/

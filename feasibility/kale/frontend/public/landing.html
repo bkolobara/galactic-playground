@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galactic Playground - Soroban Contract UI Builder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: url('/ui_background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.25;
+            z-index: 1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: left;
+            padding: 2rem;
+            max-width: 800px;
+        }
+
+        .message {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            color: #003087;
+            font-weight: 700;
+        }
+
+        .kale-link {
+            color: #003087;
+            text-decoration: underline;
+            font-weight: 700;
+        }
+
+        .kale-link:hover {
+            color: #0051D5;
+        }
+
+        @media (max-width: 768px) {
+            .message {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background"></div>
+        <div class="content">
+            <p class="message">
+                GalacticPlayground is a drag & drop UI builder for
+                <a href="https://stellar.org/soroban" target="_blank"> Soroban</a> contracts.
+                Think of it as a low-code tool that uses Soroban contracts as the building blocks.
+            </p>
+            <p class="message" style="margin-top: 1.5rem;">
+                It's still in early development. Please message me (bkolobara) on the
+                <a href="https://discord.com/invite/stellardev" target="_blank">Stellar Developer Discord</a>
+                to get early access to it, once it's ready.
+            </p>
+            <p class="message" style="margin-top: 1.5rem;">
+                Check out the <a href="/app/kale" class="kale-link" target="_blank">example KALE contract</a>
+                powered by the GalacticPlayground!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
